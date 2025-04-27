@@ -1,0 +1,113 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .container {
+    flex: 1;
+    max-width: 600px;
+    width: 90%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #00796b;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  .chat-box {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    min-height: 250px;
+  }
+  
+  .message {
+    margin: 8px 0;
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 80%;
+    line-height: 1.4;
+    font-size: 1em;
+    word-wrap: break-word;
+  }
+  
+  .message.assistant {
+    background: #e0f7fa;
+    color: #00695c;
+    align-self: flex-start;
+  }
+  
+  .message.user {
+    background: #c8e6c9;
+    color: #2e7d32;
+    align-self: flex-end;
+    margin-left: auto;
+    text-align: right;
+  }
+  
+  form {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+  }
+  
+  button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #004d40;
+  }
+  
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.5em;
+    }
+  
+    .container {
+      margin: 10px;
+      padding: 15px;
+    }
+  
+    .chat-box {
+      min-height: 200px;
+    }
+  
+    input[type="text"], button {
+      font-size: 0.9em;
+      padding: 8px;
+    }
+  }  
+  
