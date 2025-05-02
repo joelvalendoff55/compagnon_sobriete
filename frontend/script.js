@@ -21,7 +21,7 @@ form.addEventListener('submit', async (e) => {
   let typingInterval = startTypingAnimation(typingDiv);
 
   try {
-    const response = await fetch('http://127.0.0.1:8000/api/chat', {
+    const response = await fetch('https://compagnon-sobriete.onrender.com/api/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ user_message: userMessage })
