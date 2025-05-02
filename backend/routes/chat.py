@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from backend.models.message import Message
+from models.message import Message
 from backend.services.openai_service import get_openai_response
 
 router = APIRouter()
